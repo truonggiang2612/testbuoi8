@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ccc;
+  min-height: 100vh;
+}
+.heart {
+  width: 100px;
+  height: 100px;
+  background: red;
+  animation: rotation360 0.5s linear infinite;
+}
+@keyframes rotation360 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
